@@ -1,7 +1,7 @@
-# Yeelight浴霸
+# 雲儀開窗器
 
 
-Yeelight浴霸接入HomeAssistant組件
+雲儀開窗器接入HomeAssistant組件
 
 
 ## 安装
@@ -9,17 +9,11 @@ Yeelight浴霸接入HomeAssistant組件
 
 
 
-###解壓後將yeelight_yuba資料夾放入custom_components
+###解壓後將yunyi_windows資料夾放入custom_components
 
 ### configuration.yaml
 ```
-light:
-  - platform: yeelight_yuba
-    name: xxxxx
-    host: xxx.xxx.xxx.xxx
-    token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    
-climate:
+cover:
   - platform: yeelight_yuba
     name: xxxxx
     host: xxx.xxx.xxx.xxx
@@ -36,17 +30,17 @@ climate:
 
 ## 功能服務
 
-### light服務  `turn_on`
+### cover服務  `stop_cover`
 
-### light服務  `turn_off`
+### cover服務  `open_cover`
 
-### climate服務  `set_hvac_mode`
+### cover服務  `close_cover`
 
-### climate服務  `set_fan_mode`
+### cover服務  `set_cover_position`
 
-### climate服務  `turn_on (預設為乾燥模式)`    
+### cover服務  `open_cover_tilt(窗戶上鎖)`    
 
-### climate服務  `turn_off`
+### cover服務  `close_cover_tilt(窗戶解鎖)`
 
 
 
