@@ -14,7 +14,7 @@
 ### configuration.yaml
 ```
 cover:
-  - platform: yeelight_yuba
+  - platform: yunyi_windows
     name: xxxxx
     host: xxx.xxx.xxx.xxx
     token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
