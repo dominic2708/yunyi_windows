@@ -1,6 +1,7 @@
 {
   "domain": "yunyi_windows",
   "name": "Ynuyi Windows",
+  "version": "1.0",
   "documentation": [],
   "dependencies": [],
   "codeowners": [],
