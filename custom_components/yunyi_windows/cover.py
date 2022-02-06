@@ -5,7 +5,7 @@ import logging
 import voluptuous as vol
 
 import homeassistant.helpers.config_validation as cv
-from homeassistant.components.cover import (CoverDevice, PLATFORM_SCHEMA, )
+from homeassistant.components.cover import (CoverEntity, PLATFORM_SCHEMA, )
 from homeassistant.const import (CONF_NAME, CONF_HOST, CONF_TOKEN, )
 from homeassistant.exceptions import PlatformNotReady
 from datetime import timedelta
@@ -67,7 +67,7 @@ def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
     async_add_devices([device], update_before_add=True)
 
 
-class YunyiCover(CoverDevice):
+class YunyiCover(CoverEntity):
 
     def __init__(self, device, config, device_info):
         """Initialize the entity."""
