@@ -48,3 +48,4 @@ cover:
 ```
 所有插件都經參考syssi，修改而來。特別感謝https://github.com/syssi
 ```
+fix some problem, Special thanks to iCassius 
