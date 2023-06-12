@@ -37,6 +37,7 @@ SUCCESS = ['ok']
 
 SCAN_INTERVAL = timedelta(seconds=15)
 
+
 def async_setup_platform(hass, config, async_add_devices, discovery_info=None):
     """Set up the sensor from config."""
     from miio import Device, DeviceException
